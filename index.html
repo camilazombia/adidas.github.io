@@ -57,20 +57,21 @@
                 <a class="nav-link active" aria-current="page" href="#">Colecciones</a>
               </li>
             </ul>
-            <div class="input-group">
-                <div class="form-outline">
-                  <input type="search" id="form1" class="form-control" />
-                  <label class="form-label" for="form1">Search</label>
-                </div>
-                <button type="button" class="btn btn-primary">
-                  <i class="fas fa-search"></i>
-                </button>
-              </div>
-          </div>
+            <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit"><img src="./assets_/search.png" alt=""></button>
+      </form>
+            <div class="navbar-icons">
+              <ul>
+                <li><img src="./assets_/profile.png" alt=""></li>
+                <li><img src="./assets_/favs.png" alt=""></li>
+                <li><img src="./assets_/shop-bag.png" alt=""></li>
+              </ul>
+            </div>
         </div>
       </nav>
 
-      <div class="navbar-banner ">
+      <div class="navbar-banner">
           <a href=""><p>Envíos gratis a nivel nacional ¡solo para miembros!</p></a>
       </div>
       
@@ -122,7 +123,11 @@
                   <li class="breadcrumb-item active" aria-current="page">Running</li>
                 </ol>
               </nav>
+
+              <div class="d-flex">
               <h2>Tenis de Trail Running Terrex Agravic TR</h2>
+              <button><i class="bi bi-heart"></i></button>
+            </div>
               
               <div class="product-price"><h2>$247.992</h2><h3>$309.990</h3></div>
               <div class="product-overview">
@@ -135,12 +140,21 @@
               </div>
 
             <h4>Tallas Disponibles</h4>
+            <div class="d-flex">
             <input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
             <label class="btn btn-outline-primary" for="btn-check-outlined">US 5</label><br>
+            <input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btn-check-outlined">US 5</label><br>
+            <input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btn-check-outlined">US 5</label><br>
+          </div>
+          <div>
+            <p>Últimas unidades</p>
+          </div>
+
             <div>
                 <input type="number" value="500" min="0" max="1000" step="10"/>
-
-                
+                <input type="button" value="Agregar al Carrito">
             </div>
           </div>
         </div>
@@ -167,23 +181,31 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6">
+            <div>
+              <h2>Corre sin Límites.
+                Running Todo Terreno.</h2>
+                <p>Control y comodidad. Sal del pavimento con estos tenis de trail running Terrex Agravic de adidas.
+                  Su tracción, soporte y comodidad te permiten moverte sobre terrenos suaves, rocosos e irregulares. Corre sin límites.</p>
+            </div>
             <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingOne">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      Accordion Item #1
+                      Envíos gratuitos
                     </button>
                   </h2>
                   <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      <p>Disfruta de envíos sin costo a nivel nacional en todas tus compras SOLO PARA MIEMBROS. ¡Inicia sesión con tu cuenta y aprovecha!</p>
+                       <p>Información para no miembros: envío gratis a partir de $149.900 por + $14.990 solicita el envío express</p>
+                      
                     </div>
                   </div>
                 </div>
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingTwo">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      Accordion Item #2
+                      Devoluciones
                     </button>
                   </h2>
                   <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
@@ -195,7 +217,7 @@
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingThree">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      Accordion Item #3
+                      Métodos de Pago
                     </button>
                   </h2>
                   <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">

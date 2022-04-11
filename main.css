@@ -34,9 +34,10 @@
 
 .top-bar{
     background-color: rgba(0, 0, 15, 0.1);
-    padding: 0.2rem;
-    padding: 10px 0 10px 0; 
+    padding: 10px 0;
 }
+
+
 
 .top-bar a{
     color: #252525;
@@ -44,8 +45,6 @@
     text-align: center;
     text-decoration: none;
     font-family: DinProRegular;
-    padding: 0 15px 0 15px;
-    
 }
 
 .top-bar a:hover{
@@ -69,6 +68,11 @@
 
 .navbar a:hover{
     color: #0071ae;
+}
+
+.navbar-icons ul{
+  list-style: none;
+  display: flex;
 }
 
 
