@@ -1,0 +1,126 @@
+@font-face {
+    font-family: DinProRegular;
+    src: url(./assets_/fonts_/Din\ PRO\ Regular.ttf);
+  }
+
+@font-face {
+    font-family: DinProBold;
+    src: url(./assets_/fonts_/Din\ PRO\ Bold.ttf);
+  }
+
+
+
+  a:visited,
+  a:hover,
+  a:active
+   {
+    color: #0071ae; 
+  }
+
+  body h2{
+    font-family: DinProBold;
+    font-size: 40px;
+  }
+
+  body h3{
+    font-family: DinProRegular;
+    font-size: 30px;
+  }
+
+  body h4{
+    font-family: DinProBold;
+    font-size: 20px;
+  }
+
+.top-bar{
+    background-color: rgba(0, 0, 15, 0.1);
+    padding: 0.2rem;
+    padding: 10px 0 10px 0; 
+}
+
+.top-bar a{
+    color: #252525;
+    font-size: 0.8rem;
+    text-align: center;
+    text-decoration: none;
+    font-family: DinProRegular;
+    padding: 0 15px 0 15px;
+    
+}
+
+.top-bar a:hover{
+    text-decoration: underline;
+    color: #0071ae;
+}
+
+
+.navbar{
+    background-color: #fff;
+}
+
+.navbar-logo{
+    width: 50px;
+}
+
+.navbar a{
+    font-family: DinProBold;
+    color: #252525;
+}
+
+.navbar a:hover{
+    color: #0071ae;
+}
+
+
+
+video.fullscreen {
+    object-fit: cover;
+    width:100%;
+    height:658px;
+  
+  }
+
+.navbar-banner{
+    background-color: #252525;
+    padding: 0.2rem;
+  }
+
+  .navbar-banner a{
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .navbar-banner a:hover{
+    color: white;
+    text-decoration: underline;
+  }
+  
+  .product-price,
+  .product-overview{
+      display: flex;
+      align-items: center;
+  }
+  .product-price h3{
+    text-decoration-line: line-through;
+}
+  .footer{
+    padding: 100px 0 100px 0;
+    background-color: #252525;
+    color: #fff;
+    list-style-type: none;
+    font-size: 1rem;
+  }
+
+
+  .footer ul{
+    list-style-type: none;
+  }
+
+  .footer a{
+    color: #fff;
+    font-family: DinProRegular;
+    text-decoration: none;
+
+  }
