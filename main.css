@@ -32,6 +32,11 @@
     font-size: 20px;
   }
 
+  body h5{
+    font-family: DinProBold;
+    font-size: 20px;
+  }
+
 .top-bar{
     background-color: rgba(0, 0, 15, 0.1);
     padding: 10px 0;
@@ -109,6 +114,69 @@ video.fullscreen {
   .product-price h3{
     text-decoration-line: line-through;
 }
+.card-fav{
+  height: 30px;
+  width: max-content;
+  position: relative;
+  top: 20px;
+  left:2px;
+}
+.product-badge{
+  background-color: #252525;
+  height: 30px;
+  width: max-content;
+  font-family: DinProBold;
+  position: relative;
+  top: 20px;
+}
+
+.price-low{
+  text-decoration:line-through;
+}
+
+
+.accordion{
+  border: 2px solid #252525;
+}
+
+.accordion-header{
+  font-family: DinProBold;
+  font-size: 20px;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #252525;
+  background-color: rgb(231, 241, 255);
+}
+
+.card-fav{
+  background-color: #fff;
+  color: #252525;
+  text-align: center;
+  border: 2px solid #252525;
+  height: max-content;
+}
+.card-fav i{
+  font-size: 20px;
+  fill: #252525;
+}
+
+.product-size{
+  border: 2px solid #252525;
+  padding: 10px 20px;
+  font-family: DinProBold;
+}
+
+.product-size:hover{
+  border: 2px solid #252525;
+  background-color: #252525;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+
+
+
   .footer{
     padding: 100px 0 100px 0;
     background-color: #252525;
