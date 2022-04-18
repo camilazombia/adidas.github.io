@@ -7,15 +7,313 @@
     font-family: DinProBold;
     src: url(./assets_/fonts_/Din\ PRO\ Bold.ttf);
   }
+    a:visited,
+    a:hover,
+    a:active
+    {
+      color: #0071ae; 
+    }
 
+    .top-bar{
+      background-color: #F5F5F5;
+      padding: 10px 0;
 
+  }
 
-  a:visited,
-  a:hover,
-  a:active
-   {
+  @media (max-width: 600px) {
+    .top-bar{
+      display: none;
+  }
+  .nav{
+    display: none;
+}
+    }
+ 
+
+  
+  .top-bar a{
+    color: #252525;
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+    font-family: DinProRegular;
+    padding: 0px 5px;
+  }
+
+  .top-bar a:hover{
+    text-decoration: underline;
     color: #0071ae; 
   }
+
+
+
+
+
+
+
+
+.navbar{
+    background-color: #fff;
+    height: 90px;
+}
+
+.navbar-logo{
+    width: 45px;
+}
+
+.navbar a{
+    font-family: DinProBold;
+    color: #252525;
+}
+
+.navbar a:hover{
+    color: #0071ae;
+}
+
+.navbar-icons ul{
+  list-style: none;
+  display: flex;
+  width: max-content;
+  margin: auto;
+}
+
+.navbar-icons li{
+padding: 5px;
+}
+
+
+
+.nav-item{
+  padding: 0px 15px;
+}
+
+.search input[type=text] {
+  width: 200px;
+  height: 35px;
+  border: none;
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color: #EBEBEB;
+  background-image: url('./assets_/search.png');
+  background-position: 95%; 
+  background-repeat: no-repeat;
+  padding: 20px;
+  font-family: DinProBold;
+  color: #252525;
+}
+
+
+
+
+
+
+
+
+.navbar-banner{
+  background-color: #252525;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-banner a{
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navbar-banner a:hover{
+  color: white;
+  text-decoration: underline;
+}
+
+.navbar-banner p{
+  margin: auto;
+}
+
+
+.carousel-control-prev-icon {
+  background-image: url(./assets_/Icon\ feather-arrow-left.png);
+  width: 22px;
+  height: 44px;
+}
+
+.carousel-control-next-icon {
+  background-image: url(./assets_/Icon\ feather-arrow-side.png);
+  width: 22px;
+  height: 44px;
+}
+
+
+.breadcrumb-item a {
+  font-size: 15px;
+  font-family: DinProRegular;
+  color: #2525259f;
+  text-decoration: none;
+
+}
+
+.breadcrumb-item--active{
+  font-size: 16px;
+  font-family: DinProBold;
+  color: #252525;
+}
+
+
+
+
+
+.product,
+.details,
+.suggest{
+  padding: 80px 0;
+}
+
+.product-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-price,
+.product-overview{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 0 0 0 ;
+}
+
+.product-price--card{
+  display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+}
+
+
+.product-overview i{
+  font-size: 20px;
+  padding: 0 5px 0 0;
+}
+
+.product-overview a{
+  font-size: 15px;
+  font-family: DinProRegular;
+  color: #252525;
+}
+
+.product-sizes a{
+  font-size: 15px;
+  font-family: DinProRegular;
+  color: #252525;
+  padding: 0 0 0 10px;
+}
+
+
+.product-price h3{
+  text-decoration-line: line-through;
+}
+
+.top-card{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: 50px;
+  padding: 0 20px;
+}
+
+.card-fav{
+height: 30px;
+width: max-content;
+}
+
+.product-badge{
+background-color: #252525;
+height: 30px;
+width: max-content;
+font-family: DinProBold;
+}
+
+.price-low{
+text-decoration:line-through;
+}
+
+.buy-static{
+  display: flex;
+  position: relative;
+}
+
+@media (max-width: 600px) {
+  .buy-static{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    background-color:#EBEBEB ;
+    height: 130px;
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+  }
+}
+
+.product-select{
+  padding: 20px 0px ;
+}
+
+.product-select div{
+  padding: 0 20px 0 0;
+}
+
+
+.product-buy{
+  background-color: #252525;
+  border: none;
+  height: 30px;
+  font-family: DinProBold;
+  color: #EBEBEB;
+  width: 250px;
+  height: 50px;
+  position: relative;
+  top: -5px;
+  left: -5px;
+
+}
+
+.product-buyback{
+  margin: 0px 20px;
+  border: 1px solid #252525;
+  height: 0px;
+  font-family: DinProBold;
+  color: #EBEBEB;
+  width: 250px;
+  height: 50px;
+  font-size: 20px;
+
+}
+
+
+.carrousel-product{
+  overflow:-moz-hidden-unscrollable;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   body h2{
     font-family: DinProBold;
@@ -37,48 +335,21 @@
     font-size: 20px;
   }
 
-.top-bar{
-    background-color: rgba(0, 0, 15, 0.1);
-    padding: 10px 0;
-}
-
-
-
-.top-bar a{
-    color: #252525;
-    font-size: 0.8rem;
-    text-align: center;
-    text-decoration: none;
+  body h5 a{
     font-family: DinProRegular;
-}
+    font-size: 15px;
+  }
 
-.top-bar a:hover{
-    text-decoration: underline;
-    color: #0071ae;
-}
+  .warning{
+    color: red;
+    font-family: DinProRegular;
+    font-size: 15px;
+  }
 
 
-.navbar{
-    background-color: #fff;
-}
 
-.navbar-logo{
-    width: 50px;
-}
 
-.navbar a{
-    font-family: DinProBold;
-    color: #252525;
-}
 
-.navbar a:hover{
-    color: #0071ae;
-}
-
-.navbar-icons ul{
-  list-style: none;
-  display: flex;
-}
 
 
 
@@ -89,50 +360,40 @@ video.fullscreen {
   
   }
 
-.navbar-banner{
-    background-color: #252525;
-    padding: 0.2rem;
-  }
 
-  .navbar-banner a{
-    color: white;
-    font-size: 1rem;
-    text-align: center;
-    text-decoration: none;
-  }
-
-  .navbar-banner a:hover{
-    color: white;
-    text-decoration: underline;
-  }
   
-  .product-price,
-  .product-overview{
-      display: flex;
-      align-items: center;
-  }
-  .product-price h3{
-    text-decoration-line: line-through;
-}
-.card-fav{
-  height: 30px;
-  width: max-content;
-  position: relative;
-  top: 20px;
-  left:2px;
-}
-.product-badge{
-  background-color: #252525;
-  height: 30px;
-  width: max-content;
-  font-family: DinProBold;
-  position: relative;
-  top: 20px;
-}
+ 
 
-.price-low{
-  text-decoration:line-through;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .accordion{
@@ -146,11 +407,23 @@ video.fullscreen {
 
 .accordion-button:not(.collapsed) {
   color: #252525;
-  background-color: rgb(231, 241, 255);
+  background-color: #fff;
+}
+
+.accordion-body{
+  font-family: DinProRegular;
+}
+
+.accordion-button:not(.collapsed) {
+  box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+}
+
+.accordion-body h4{
+  font-family: DinProBold;
 }
 
 .card-fav{
-  background-color: #fff;
+  background-color: transparent;
   color: #252525;
   text-align: center;
   border: 2px solid #252525;
@@ -158,7 +431,7 @@ video.fullscreen {
 }
 .card-fav i{
   font-size: 20px;
-  fill: #252525;
+  font-weight: bold;
 }
 
 .product-size{
@@ -178,21 +451,45 @@ video.fullscreen {
 
 
   .footer{
-    padding: 100px 0 100px 0;
+    margin-top: 80px;
+    padding: 60px 0 20px 0;
     background-color: #252525;
     color: #fff;
     list-style-type: none;
+    
     font-size: 1rem;
   }
 
 
   .footer ul{
     list-style-type: none;
+    display: block;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
   }
 
   .footer a{
     color: #fff;
     font-family: DinProRegular;
     text-decoration: none;
+    font-size: 12px;
 
+  }
+  
+  .footer-bold{
+    font-family: DinProBold;
+    font-size: 16px;
+  }
+
+  .footer-bold a{
+    font-family: DinProBold;
+    font-size: 16px;
+  }
+
+  .footer-bottom{
+    font-family: DinProRegular;
+    font-size: 12px;
   }

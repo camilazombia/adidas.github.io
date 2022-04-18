@@ -5,30 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./main.css">
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./main.css">
   
 </head>
 <body>
-    <div class="nav justify-content-end top-bar">
+    <div class="nav justify-content-end top-bar align-items-center">
         <div class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Ayuda</a>
+            <a class="nav-link active top-bar--item" aria-current="page" href="#">Ayuda</a>
         </div>
-        <div class="d-flex" style="height: 2px;">
-          <div class="vr"></div>
-        </div>
-        <div class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Cambios y Devoluciones</a>
+        <div class="d-flex">
+          <div class="vr" style="background-color: #252525;"></div>
         </div>
         <div class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Seguimiento de Pedidos</a>
+            <a class="nav-link active top-bar--item" aria-current="page" href="#">Cambios y Devoluciones</a>
+        </div>
+        <div class="d-flex">
+          <div class="vr" style="background-color: #252525;"></div>
         </div>
         <div class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Únete al Club</a>
+            <a class="nav-link active top-bar--item" aria-current="page" href="#">Seguimiento de Pedidos</a>
+        </div>
+        <div class="d-flex">
+          <div class="vr" style="background-color: #252525;"></div>
+        </div>
+        <div class="nav-item">
+            <a class="nav-link active top-bar--item" aria-current="page" href="#">Únete al Club</a>
         </div>
 </div>
     </div>
+
+
+
+
+
+
+
+
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
@@ -38,7 +53,8 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Hombre</a>
               </li>
@@ -58,10 +74,11 @@
                 <a class="nav-link active" aria-current="page" href="#">Colecciones</a>
               </li>
             </ul>
-            <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit"><img src="./assets_/search.png" alt=""></button>
-      </form>
+            <form class="d-flex search">
+              <div class="input-group search-bar">
+                <input type="text" name="search" placeholder="Buscar">
+            </div>
+            </form>
             <div class="navbar-icons">
               <ul>
                 <li><img src="./assets_/profile.png" alt=""></li>
@@ -72,8 +89,17 @@
         </div>
       </nav>
 
+
+
+
+
+
+
+
       <div class="navbar-banner">
+        <div class="navbar-banner--items ">
           <a href=""><p>Envíos gratis a nivel nacional ¡solo para miembros!</p></a>
+        </div>
       </div>
       
 
@@ -81,8 +107,8 @@
 
 
 
-      <div class="container">
-          <div class="row">
+      <div class="container product">
+          <div class="row d-flex">
           <div class="col-12 col-md-6">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -115,51 +141,71 @@
               </div>
 
           </div>
-          <div class="col-12 col-md-4">
-            <nav aria-label="breadcrumb">
+          <div class="col-1"></div>
+          <div class="col-12 col-md-5 product-content" >
+            <div>
+              <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="#">Inicio</a></li>
                   <li class="breadcrumb-item"><a href="#">Mujer</a></li>
                   <li class="breadcrumb-item"><a href="#">Calzado</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Running</li>
+                  <li class="breadcrumb-item active breadcrumb-item--active" aria-current="page">Running</li>
                 </ol>
               </nav>
-
-              <div class="d-flex align-items-start">
-              <h2>Tenis de Trail Running Terrex Agravic TR</h2>
-              <button class="card-fav "><i class="bi bi-heart"></i></button>
-            </div>
-              
-              <div class="product-price"><h2>$247.992</h2><h3>$309.990</h3></div>
-              <div class="product-overview">
-                <i class="bi bi-star"></i>
-                <i class="bi bi-star"></i>
-                <i class="bi bi-star"></i>
-                <i class="bi bi-star"></i>
-                <i class="bi bi-star"></i>
-                <a href=""><p>(20)</p></a>
+              <div class="d-flex justify-content-between">
+                <div>
+                   <h2>Tenis de Trail Running</h2>
+                    <h2>Terrex Agravic TR</h2>
+                </div>
+                <div class="product-fav">
+                <button class="card-fav"><i class="bi bi-heart"></i></button>
               </div>
-
-            <h4>Tallas Disponibles</h4>
-            <div class="d-flex">
-            <input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
-            <label class="product-size" for="btn-check-outlined">US 5</label><br>
-            <input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
-            <label class="product-size" for="btn-check-outlined">US 5</label><br>
-            <input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
-            <label class="product-size" for="btn-check-outlined">US 5</label><br>
+              </div>
+                
+                <div class="product-price mx-auto"><h2>$247.992</h2><h3>$309.990</h3></div>
+                <div class="product-overview">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+                  <a href="">(20)</a>
+                </div>
+            </div>
+            <div>
+              <div class="d-flex product-sizes">
+                <h4>Tallas Disponibles</h4>
+                <a href="">Guía de tallas</a>
+              </div>
+  
+              <div class="d-flex product-select">
+                <div>
+                  <input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
+                  <label class="product-size" for="btn-check-outlined">US 5</label>
+                </div>
+                <div>
+                  <input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
+                  <label class="product-size" for="btn-check-outlined">US 5.5</label>
+                </div>
+                <div>
+                  <input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
+                  <label class="product-size" for="btn-check-outlined">US 6</label>
+                </div>
+              </div>
+              <div>
+                <p class="warning">Últimas unidades</p>
+              </div>
           </div>
           <div>
-            <p>Últimas unidades</p>
+            <div class="buy-static">
+              <input type="number" name="" id="">
+              <div class="product-buyback"><input type="button" class="product-buy" value="Agregar al Carrito"></div>
           </div>
-
-            <div>
-                <input type="number" value="500" min="0" max="1000" step="10"/>
-                <input type="button" value="Agregar al Carrito">
+            
             </div>
           </div>
-        </div>
-      </div>
+          </div>
+          </div>
 
 
 
@@ -177,14 +223,12 @@
 
 
 
-
-
-      <div class="container">
+      <div class="container details">
         <div class="row">
           <div class="col-md-6">
             <div>
-              <h2>Corre sin Límites.
-                Running Todo Terreno.</h2>
+              <h2>Corre sin Límites.</h2>
+               <h2>Running Todo Terreno.</h2>
                 <p>Control y comodidad. Sal del pavimento con estos tenis de trail running Terrex Agravic de adidas.
                   Su tracción, soporte y comodidad te permiten moverte sobre terrenos suaves, rocosos e irregulares. Corre sin límites.</p>
             </div>
@@ -211,7 +255,13 @@
                   </h2>
                   <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      <ol>
+                        <li>Recuerda que tienes 60 días desde al fecha de recepción de tu pedio para iniciar tu proceso de Devolución o cambio.</li>
+                        <li>Deberás cumplir con los Requisitos de Devolución. </li>
+                        <li>Inicia tu proceso desde nuestro Portal de Autogestión o comunicándote con nuestro Centro de Atención al Cliente. </li>
+                      </ol>
+                      
+
                     </div>
                   </div>
                 </div>
@@ -223,7 +273,12 @@
                   </h2>
                   <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      <h4>PAGO EN LÍNEA</h4>
+                      <p>Podrás pagar con tu tarjeta bancaria Visa, MasterCard y American Express) o con transferencia bancaria a través de PSE.</p>
+                      <h4>PAGO EN EFECTIVO </h4>
+                      <p>Podrás a tu comercio Baloto y Efecty más cercano con tu código de pago.</p>
+                      <p>Recuerda que tu línea de pago cuenta con una vigencia de hasta 5 días. Para evitar complicaciones, te sugerimos hacer tu pago lo antes posible y no esperar a la fecha de vencimiento.
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -233,7 +288,9 @@
 
 
          </div>
-         <div class="col-md-6"> 
+
+         <div class="col-md-1"></div>
+         <div class="col-md-5"> 
             <video class="fullscreen" src="./assets_/Tenis_de_Trail_Running_Terrex_Agravic_TR_Morado_FZ2643_video.mp4" playsinline autoplay muted loop>
             </video>
    
@@ -241,49 +298,55 @@
          </div>
       </div>
 
-      <div class="container">
+      <div class="container horizontal-container suggest">
         <h4>También te podría interesar</h4>
-        <div class="row d-flex ">
-          <div class="col-md-4">
-            <button class="card-fav"><i class="bi bi-heart"></i></button>
+        <div class="row d-flex carrousel-product">
+          <div class="col-md-4 col-6">
+            <div class="top-card">
+              <span class="badge product-badge invisible"><h5></h5></span>
+              <button class="card-fav"><i class="bi bi-heart"></i></button>
+            </div>
             <img src="./assets_/Tenis ZX 10,000 Disney.webp" class="card-img-top" alt="...">
             <div class="card-body">
               <h4>Tenis ZX 10,000 Disney</h4>
-              <div class="product-price"><h4>$247.992</h4></div>
+              <div class="product-price--card"><h4>$247.992</h4></div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 col-6">
             <div class="top-card">
             <span class="badge product-badge"><h5>-20%</h5></span>
             <button class="card-fav"><i class="bi bi-heart"></i></button>
           </div>
             <img src="./assets_/Tenis de Train Running.webp" class="card-img-top" alt="...">
-            <div class="card-body">
+            <div class="card-body mx">
               <h4>Tenis de Train Running</h4>
-              <div class="product-price"><h4>$247.992</h4><p class="price-low">$309.990</p></div>
+              <div class="product-price--card "><h4>$247.992</h4><p class="price-low ">$309.990</p></div>
               
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 col-6">
+            <div class="top-card">
             <span class="badge product-badge"><h5>-10%</h5></span>
             <button class="card-fav"><i class="bi bi-heart"></i></button>
+          </div>
             <img src="./assets_/Court80´s.webp" class="card-img-top" alt="...">
             <div class="card-body">
               <h4>Court80´s</h4>
-              <div class="product-price"><h4>$247.992</h4><p class="price-low">$309.990</p></div>
+              <div class="product-price--card"><h4>$247.992</h4><p class="price-low">$309.990</p></div>
             </div>
           </div>
+          
       </div>
 
     </div>
 
 
 
-      <footer class="footer">
+      <footer class="footer container-fluid">
         <div class="container">
           <div class="row">
-            <div class="col-12 col-md-2">
-              <ul>
+            <div class="col-6 col-md-2">
+              <ul class="footer-bold">
                 <li><a href="">ADICLUB</a></li>
                 <li><a href="">ADIDAS EN CASA</a></li>
                 <li><a href="">ADIDAS APP</a></li>
@@ -291,9 +354,9 @@
                 <li><a href="">BUSCAR UNA TIENDA</a></li>
               </ul>
             </div>
-            <div class="col-12 col-md-2">
+            <div class="col-6 col-md-2">
               <ul>
-                <li>ASISTENCIA</li>
+                <li class="footer-bold">ASISTENCIA</li>
                 <li><a href="">Servicio al Cliente</a></li>
                 <li><a href="">¿Necesitas Ayuda?</a></li>
                 <li><a href="">¿Cuál es mi talla adidas</a></li>
@@ -303,18 +366,18 @@
                 <li><a href="">Devoluciones y reembolsos</a></li>
               </ul>
             </div>
-            <div class="col-12 col-md-2">
+            <div class="col-6 col-md-2">
               <ul>
-                <li>SOBRE ADIDAS</li>
+                <li class="footer-bold">SOBRE ADIDAS</li>
                 <li><a href="">Sobre Adidas</a></li>
                 <li><a href="">Trabaja con nosotros</a></li>
                 <li><a href="">Prensa</a></li>
                 <li><a href="">Sostenibilidad</a></li>
               </ul>
             </div>
-            <div class="col-12 col-md-2">
+            <div class="col-6 col-md-2">
               <ul>
-                <li>TÉRMINOS Y CONDICIONES</li>
+                <li class="footer-bold">TÉRMINOS Y CONDICIONES</li>
                 <li><a href="">Términos y Conjdiciones</a></li>
                 <li><a href="">Politica de Privacidad</a></li>
                 <li><a href="">Politica de privacidad</a></li>
@@ -326,12 +389,18 @@
           </div>
 
         </div>
+        <div class="container d-flex justify-content-between pt-5 footer-bottom">
+          <p>Colombia</p>
+          <p>© 2022 adidas Colombia LTDA</p>
+        </div>
+      
 
 
       </footer>
 
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+      <script src="main.js"></script>
 </body>
 
 </html>
